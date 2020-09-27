@@ -3,9 +3,19 @@
 <form action="{% url 'password' %}">
   <select name="length">
     <option value="6">6</option>
-    <option value="12">12</option>
+    <option value="12" selected="selected">12</option>
     <option value="16">16</option>
   </select>
 
+  <br>
+  <input type="checkbox" name="uppercase" value="on">Uppercase</input>
+
+  <br>
+  <input type="checkbox" name="numbers" value="on">Numbers</input>
+
+  <br>
+  <input type="checkbox" name="special" value="on">Special characters</input>
+
+  <br>
   <input type="submit" value="Generate Password">
 </form>
