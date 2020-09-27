@@ -1,3 +1,8 @@
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<div class="container text-center">
 <h1>Password Generator</h1>
 
 <form action="{% url 'password' %}">
@@ -5,7 +10,7 @@
     <option value="6">6</option>
     <option value="12" selected="selected">12</option>
     <option value="16">16</option>
-  </select>
+  </select> Length
 
   <br>
   <input type="checkbox" name="uppercase" value="on">Uppercase</input>
@@ -17,8 +22,8 @@
   <input type="checkbox" name="special" value="on">Special characters</input>
 
   <br>
-  <input type="submit" value="Generate Password">
+  <input type="submit" value="Generate Password" class="btn btn-primary">
 </form>
-
+</div>
 <br>
 <a href="{% url 'about' %}">About</a>
